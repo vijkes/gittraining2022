@@ -1,0 +1,77 @@
+545  git commit hello.c -m "version2"
+
+  50  git diff 8f1b276057 c3f91fc58a
+  554  git log --oneline
+ 
+  558  git restore --staged file1   //untrack file from STAGING AREA	
+  561  git add file1
+  568   git commit file1 -m "update1 file1"
+    
+  
+  599  git add file5.yml
+  600  git commit file5.yml -m "check line1"
+ 
+  611  git show HEAD~1
+ 
+  618  git diff 0df7f14 8f1b276
+  619  git config --global user.name "vk"
+  620  git config --global user.email "vk@vk.com"
+  621  git config --global -l
+   
+  649  git commit .gitignore -m "add gitignore"
+    
+  669  git show HEAD~0
+  670  git ls-files
+  671  git show --name-only
+  
+  673  git ls-tree HEAD		//list contents in working dir
+  674  git ls-tree --name-only HEAD
+   
+  709  git reset 4de966c hello.py	//remove particular head from commit
+  710  cat hello.py
+  711  git checkout 4de966c
+  712  git checkout hello.py
+  713  cat hello.py
+  714  git show
+  715  git log --oneline
+  716  git reset --oneline ec616ff
+  
+  737  git show			//restore back particular head to commit
+  738  git branch tmp
+  739  git checkout master
+  740  git merge tmp
+  741  git log --oneline
+  
+  744  git show d1c8862
+  745  git log --oneline
+  746  git reset HEAD~0
+
+  749  git checkout hello.py
+  751  git reset HEAD hello.py
+  752  git checkout hello.py
+  753  git reset HEAD~2 hello.py
+  754  git checkout hello.py
+  755  git log --oneline
+  756  git show
+  757  git log --oneline
+  758  git reset HEAD~0 hello.py
+  759  git checkout hello.py
+
+  765  git log --help
+  766  git config --global alias.hist "log --oneline" //create alias of cmd
+  767  git hist
+  768  git config --global -l
+
+  770  git init newproj1
+  771  cd newproj1/
+
+  788  git rm a 		//remove specific file from all three stages
+  812  git rm -r .		////remove ALL files from all three stages
+  
+  818  git ls-tree --name-only HEAD
+ 
+  820  git add -u
+
+  822  git add -A
+
+  824  git commit -m "update"
